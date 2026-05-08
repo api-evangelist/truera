@@ -1,0 +1,29 @@
+aid: truera
+url: https://raw.githubusercontent.com/api-evangelist/truera/refs/heads/main/apis.yml
+name: TruEra
+x-type: company
+description: >-
+  TruEra (acquired by Snowflake in 2024) is an AI observability and evaluation platform offering ML and LLM monitoring, root-cause analysis, and bias auditing.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - AI
+  - Observability
+  - Evaluation
+  - ML
+  - Snowflake
+created: '2026-05-08'
+modified: '2026-05-08'
+specificationVersion: '0.19'
+apis: []
+common:
+  - type: Website
+    url: https://truera.com/
+  - type: Plans
+    url: plans/truera-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/truera-rate-limits.yml
+  - type: FinOps
+    url: finops/truera-finops.yml
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
