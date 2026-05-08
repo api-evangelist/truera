@@ -1,35 +1,46 @@
 specification: API Commons Rate Limits
 specificationVersion: '0.1'
 schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
-provider: TruEra
+provider: TruEra (Snowflake)
 providerId: truera
 created: '2026-05-08'
 modified: '2026-05-08'
 reconciled: false
 tags:
-- AI
+- AI Evaluation
 - Observability
-- Evaluation
-- ML
+- AI Governance
+- LLM
+- RAG
 - Snowflake
 - Rate Limiting
 - Quotas
 - Throttling
-description: Placeholder rate-limit artifact for TruEra. Replace with real limits once researched.
-notes: Initial scaffold — limits have not yet been reconciled.
+description: >-
+  TruLens runs in-process and has no hosted rate limit. Limits are determined by the upstream LLM
+  judge model. The legacy TruEra hosted platform applied per-tenant limits configured in the
+  enterprise contract; specific thresholds were not publicly published. Snowflake-hosted offerings
+  inherit Snowflake account/warehouse concurrency limits.
+notes: TruLens is local-only; Snowflake successor inherits Snowflake account limits.
 sources:
-- https://truera.com/
+- https://www.trulens.org/
+- https://docs.snowflake.com/
 responseCodes:
   throttled: 429
 limits:
-- name: Default
+- name: TruLens (local)
+  scope: n/a
+  metric: n/a
+  limit: library only
+  notes: Limits come from upstream LLM provider.
+- name: Snowflake successor
   scope: account
-  metric: varies
-  limit: see provider documentation
-  notes: Pending reconciliation.
+  metric: credits
+  limit: Snowflake-defined
+  notes: Inherits Snowflake warehouse concurrency and credit caps.
 policies:
-- name: Backoff Strategy
-  description: Clients should implement exponential backoff with jitter and honor any Retry-After header.
+- name: Concurrency Control
+  description: Tune feedback function concurrency in TruLens to respect upstream model limits.
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com

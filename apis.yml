@@ -1,23 +1,62 @@
 aid: truera
 url: https://raw.githubusercontent.com/api-evangelist/truera/refs/heads/main/apis.yml
-name: TruEra
+name: TruEra (Snowflake)
 x-type: company
 description: >-
-  TruEra (acquired by Snowflake in 2024) is an AI observability and evaluation platform offering ML and LLM monitoring, root-cause analysis, and bias auditing.
+  TruEra was an AI quality, observability, and governance platform that was acquired by Snowflake in
+  May 2024. The standalone TruEra product is being absorbed into Snowflake's Cortex/AI platform. The
+  open-source TruLens evaluation library (originally from TruEra) remains active as a standalone
+  Python project for LLM and RAG evaluation.
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 tags:
-  - AI
+  - AI Evaluation
   - Observability
-  - Evaluation
-  - ML
+  - AI Governance
+  - LLM
+  - RAG
   - Snowflake
 created: '2026-05-08'
 modified: '2026-05-08'
 specificationVersion: '0.19'
-apis: []
+apis:
+  - aid: truera:trulens
+    name: TruLens (Open Source)
+    description: >-
+      Open-source Python library for evaluating and tracking LLM applications. Provides feedback functions
+      (groundedness, relevance, etc.), tracing, and a local dashboard. Distributed via PyPI under Apache
+      2.0; runs in-process and integrates with LangChain and LlamaIndex.
+    humanURL: https://www.trulens.org/
+    tags:
+      - Open Source
+      - Python
+      - LLM Eval
+      - Tracing
+    properties:
+      - type: Documentation
+        url: https://www.trulens.org/
+      - type: GitHub
+        url: https://github.com/truera/trulens
+  - aid: truera:platform
+    name: TruEra AI Quality Platform (Legacy / Snowflake)
+    description: >-
+      TruEra's hosted AI quality platform offered REST APIs for ingesting models, predictions, and
+      feedback for traditional ML observability. Following the Snowflake acquisition, capabilities are
+      migrating into Snowflake Cortex; standalone TruEra access is being phased out for new customers.
+    humanURL: https://truera.com/
+    tags:
+      - ML Observability
+      - Governance
+      - Enterprise
+    properties:
+      - type: Documentation
+        url: https://truera.com/
+      - type: Snowflake
+        url: https://www.snowflake.com/en/news/press-releases/snowflake-to-acquire-leading-ai-observability-platform-truera/
 common:
   - type: Website
     url: https://truera.com/
+  - type: OpenSource
+    url: https://github.com/truera/trulens
   - type: Plans
     url: plans/truera-plans-pricing.yml
   - type: RateLimits
