@@ -1,7 +1,7 @@
 aid: truera
 url: https://raw.githubusercontent.com/api-evangelist/truera/refs/heads/main/apis.yml
 name: TruEra (Snowflake)
-x-type: company
+kind: company
 description: >-
   TruEra was an AI quality, observability, and governance platform that was acquired by Snowflake in
   May 2024. The standalone TruEra product is being absorbed into Snowflake's Cortex/AI platform. The
