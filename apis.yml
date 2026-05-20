@@ -53,6 +53,8 @@ apis:
       - type: Snowflake
         url: https://www.snowflake.com/en/news/press-releases/snowflake-to-acquire-leading-ai-observability-platform-truera/
 common:
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/truera
   - type: Website
     url: https://truera.com/
   - type: OpenSource
