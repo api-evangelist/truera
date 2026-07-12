@@ -1,0 +1,27 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: truera.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 14 16:02:17 2026 GMT
+  hsts: true
+  hsts_max_age: 31536000
+- host: www.trulens.org
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 18 03:58:22 2026 GMT
+  hsts: false
+domains:
+- domain: truera.com
+  dnssec: true
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
+- domain: trulens.org
+  dnssec: true
+  caa: []
+  spf: false
+  dmarc: false

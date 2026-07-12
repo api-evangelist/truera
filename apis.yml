@@ -53,6 +53,8 @@ apis:
       - type: Snowflake
         url: https://www.snowflake.com/en/news/press-releases/snowflake-to-acquire-leading-ai-observability-platform-truera/
 common:
+  - type: DomainSecurity
+    url: security/truera-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/truera
   - type: Website
@@ -65,6 +67,8 @@ common:
     url: rate-limits/truera-rate-limits.yml
   - type: FinOps
     url: finops/truera-finops.yml
+  - url: https://truera.com/feed/
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
