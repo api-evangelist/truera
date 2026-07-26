@@ -20,9 +20,6 @@ TruEra was an AI quality, observability, and governance platform that was acquir
 Open-source Python library for evaluating and tracking LLM applications. Provides feedback functions (groundedness, relevance, etc.), tracing, and a local dashboard. Distributed via PyPI under Apache 2.0; runs in-process and integrates with LangChain and LlamaIndex.
 - **Docs:** https://www.trulens.org/
 
-### TruEra AI Quality Platform (Legacy / Snowflake)
-TruEra's hosted AI quality platform offered REST APIs for ingesting models, predictions, and feedback for traditional ML observability. Following the Snowflake acquisition, capabilities are migrating into Snowflake Cortex; standalone TruEra access is being phased out for new customers.
-- **Docs:** https://truera.com/
 
 ## Common Properties
 - [Website](https://truera.com/)

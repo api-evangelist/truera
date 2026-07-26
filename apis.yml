@@ -7,7 +7,19 @@ description: >-
   May 2024. The standalone TruEra product is being absorbed into Snowflake's Cortex/AI platform. The
   open-source TruLens evaluation library (originally from TruEra) remains active as a standalone
   Python project for LLM and RAG evaluation.
-image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source:
+    - plans
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/truera.png
 tags:
   - AI Evaluation
   - Observability
@@ -16,7 +28,7 @@ tags:
   - RAG
   - Snowflake
 created: '2026-05-08'
-modified: '2026-05-08'
+modified: '2026-07-25'
 specificationVersion: '0.19'
 apis:
   - aid: truera:trulens
@@ -36,22 +48,6 @@ apis:
         url: https://www.trulens.org/
       - type: GitHub
         url: https://github.com/truera/trulens
-  - aid: truera:platform
-    name: TruEra AI Quality Platform (Legacy / Snowflake)
-    description: >-
-      TruEra's hosted AI quality platform offered REST APIs for ingesting models, predictions, and
-      feedback for traditional ML observability. Following the Snowflake acquisition, capabilities are
-      migrating into Snowflake Cortex; standalone TruEra access is being phased out for new customers.
-    humanURL: https://truera.com/
-    tags:
-      - ML Observability
-      - Governance
-      - Enterprise
-    properties:
-      - type: Documentation
-        url: https://truera.com/
-      - type: Snowflake
-        url: https://www.snowflake.com/en/news/press-releases/snowflake-to-acquire-leading-ai-observability-platform-truera/
 common:
   - type: DomainSecurity
     url: security/truera-domain-security.yml
