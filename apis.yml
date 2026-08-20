@@ -39,6 +39,11 @@ apis:
       2.0; runs in-process and integrates with LangChain and LlamaIndex.
     humanURL: https://www.trulens.org/
     tags:
+      - Open-Source
+      - Python
+      - LLM Eval
+      - Tracing
+    tags_raw:
       - Open Source
       - Python
       - LLM Eval
