@@ -9,14 +9,18 @@ description: >-
   Python project for LLM and RAG evaluation.
 deliveryModel:
   model: saas
-  open_source: false
+  license_evidence:
+    not_product:
+    - truera/trulens
+  open_source: unknown
   commercial: true
   callable_host: false
   label: Hosted service · you call their endpoint
-  confidence: medium
+  confidence: low
   source:
   - pricing
-  generated: '2026-08-28'
+  - repository-not-product
+  generated: '2026-09-25'
   method: derived
 accessModel:
   pricing: unknown
@@ -50,7 +54,7 @@ apis:
       2.0; runs in-process and integrates with LangChain and LlamaIndex.
     humanURL: https://www.trulens.org/
     tags:
-      - Open-Source
+      - Open Source
       - Python
       - LLM Eval
       - Tracing
@@ -59,6 +63,7 @@ apis:
       - Python
       - LLM Eval
       - Tracing
+      - Open-Source
     properties:
       - type: Documentation
         url: https://www.trulens.org/
