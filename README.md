@@ -1,4 +1,4 @@
-# TruEra (Snowflake) (truera)
+# TruEra (Snowflake)
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -66,33 +66,100 @@
 
 TruEra was an AI quality, observability, and governance platform that was acquired by Snowflake in May 2024. The standalone TruEra product is being absorbed into Snowflake's Cortex/AI platform. The open-source TruLens evaluation library (originally from TruEra) remains active as a standalone Python project for LLM and RAG evaluation.
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/truera/refs/heads/main/apis.yml)
+**Areas:** AI Evaluation · Observability · AI Governance · LLM · RAG · Snowflake
 
-## Type
-- **x-type:** company
+## TruEra (Snowflake) on APIs.io
 
-## Tags
-- AI Evaluation, Observability, AI Governance, LLM, RAG, Snowflake
+Everything profiled for TruEra (Snowflake) is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/truera/](https://apis.io/providers/truera/)** — or go straight to one of the APIs or properties below.
 
-## Timestamps
-- **Created:** 2026-05-08
-- **Modified:** 2026-05-08
+### APIs (1)
 
-## APIs
+- [TruLens (Open Source)](https://apis.io/apis/truera/trulens/) — Open-source Python library for evaluating and tracking LLM applications. Provides feedback functions (groundedness, relevance, etc.), tracing, and a local…
 
-### TruLens (Open Source)
-Open-source Python library for evaluating and tracking LLM applications. Provides feedback functions (groundedness, relevance, etc.), tracing, and a local dashboard. Distributed via PyPI under Apache 2.0; runs in-process and integrates with LangChain and LlamaIndex.
-- **Docs:** https://www.trulens.org/
+### Published properties
 
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Common Properties
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Truera Domain Security](https://apis.io/security/truera/truera-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Truera Plans Pricing](https://apis.io/plans/truera/truera-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Truera Rate Limits](https://apis.io/rate-limits/truera/truera-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Truera Finops](https://apis.io/finops/truera/truera-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
 - [Website](https://truera.com/)
-- [OpenSource](https://github.com/truera/trulens)
-- [Plans](plans/truera-plans-pricing.yml) — reconciled (TruLens OSS; commercial via Snowflake)
-- [RateLimits](rate-limits/truera-rate-limits.yml) — partial (Snowflake successor inherits account limits)
-- [FinOps](finops/truera-finops.yml) — reconciled (FOCUS-aligned)
+- [Blog](https://truera.com/feed/)
 
-## Maintainers
-**FN:** Kin Lane
+## API Evangelist rating
 
-**Email:** kin@apievangelist.com
+**Kin Score 9.1** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 11.9 |
+| Access clarity | 5.3 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 5.5** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/truera/](https://apis.io/providers/truera/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for TruEra (Snowflake): the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/truera/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
